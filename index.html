@@ -1,1 +1,583 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JPCC Group design by Alexander</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <style>
+      .alert {
+       margin-inline : 25%;
+        background-color: #f45236; 
+        color: white;
+        border-radius: 20PX;
+        /* color: rgb(253, 4, 0);
+        background-image: url("./image/background.jpg");  
+        background-repeat: no-repeat;
+        /* background-attachment: fixed; 
+      background-size: 100% 100%; */
+      }
+      
+      .closebtn {
+        margin-left: 15px;
+        margin-top: -10px;
+        color: white;
+        font-weight: bold;
+        float: right;
+        font-size: 35px;
+        line-height: 0px;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+      
+      .closebtn:hover {
+        color: black;
+      }
+      .footer{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px;
+        justify-content: space-around;
+        background-color: rgba(231, 71, 71, 0.751);
+        color: white;
+        margin-top: 6px; 
+    
+    }
+    a {
+      text-decoration: none;
+      color: white
+    }
+    .responsive {
+      max-width: 100%;
+      height: auto;
+    }
+    th {
+      border: 2px solid black;
+      background-color: gold;
+    }
+    td {
+      border: 1px solid black;
+      background-color: none;
+    }
+      </style>
+  </head>
+  <body >
+
+    <!-- navbar -->
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary my-2">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"><img src="./image/csp-logo.jpg" height="40px" width="80px"> </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Post Projects</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="Umang1.html">UMANG CITY1</a></li>
+                    <!-- <li><a class="dropdown-item" href="#">Active Projects</a></li>
+                    <li><a class="dropdown-item" href="#">Upcoming Projects</a></li> -->
+                </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Active Projects</a>
+                  <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="Umang2.html">UMANG CITY2</a></li>
+                      <!-- <li><a class="dropdown-item" href="#">Active Projects</a></li>
+                      <li><a class="dropdown-item" href="#">Upcoming Projects</a></li>-->
+                  </ul> 
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Upcoming Projects</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="Umang3.html">UMANG CITY3</a></li>
+                        <!-- <li><a class="dropdown-item" href="#">Active Projects</a></li>
+                        <li><a class="dropdown-item" href="#">Upcoming Projects</a></li> -->
+                    </ul>
+                    </li>
+                <li class="nav-item">
+                <a class="nav-link" href="scheme.html">New Schemes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Contact_us.html">Contact Us</a>
+                </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    <!-- end of navbar -->`
+
+    <div class="container-fluid">
+      <div class="bg-info bg-opacity-50">
+  
+        <div class="alert">
+          <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+          <!-- <h2>Rental flats are available in Delhi-NCR</h2> -->
+            <!-- <br><img src="./image/house.jpg" height="200vw" width="230vw" class="float-md-end">
+        
+        <h3><u>Rental Plots in Delhi-NCR</u> </h3>
+        <h2>Rent starts within 45 days of plot delivery</h2>
+        <h5>Plot with house only ₹24.24 Lakh</h5>
+        <h2>Rent Value start 17K per month</h2>
+        <p>Offer vaild for booking in May</p> -->
+        <img src="./image/ads.jpeg" class="w-100 mt-2">
+            </div>
+          </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row justify-content-center my-2">
+          <h1 class="text-center">Scheme Of Active Project</h1>
+            <table border="2" class="mt-2">
+              <tr>
+                <th colspan="3" >DETAILS OF NEW NOIDA (DADRI) PROJECT</th>
+              </tr>
+              <tr>
+                <td>PLOT SIZE</td>
+                <td>60 SQ YARD</td>
+                <td>80 SQ YARD</td>
+              </tr>
+              <tr>
+                <td>BUILD UP AREA</td>
+                <td>450 SQFT</td>
+                <td>650 SQ FT</td>
+              </tr>
+              <tr>
+                <td>BASIC SALE PRICE</td>
+                <td>24.24 LACS</td>
+                <td>33.33 LACS</td>
+              </tr>
+              <tr>
+                <td>DISCOUNT TILL 30TH MAY 24</td>
+                <td>2.02 LACS</td>
+                <td>3.03 LACS</td>
+              </tr>
+              <tr>
+                <td>TOTAL AMOUNT</td>
+                <td>22.22 LACS</td>
+                <td>30.30 LACS</td>
+              </tr>
+              <tr>
+                <th colspan="3" >LOCKING RENTEL FOR 9 YEARS</th>
+              </tr>
+              <tr>
+                <td>1ST 36 MONTHS</td>
+                <td>17K/612000</td>
+                <td>25K/900000</td>
+              </tr>
+              <tr>
+                <td>2ND 36 MONTHS</td>
+                <td>20K/720000</td>
+                <td>28K/1008000</td>
+              </tr>
+              <tr>
+                <td>3RD 36 MONTHS</td>
+                <td>22K/792000</td>
+                <td>31K/1116000</td>
+              </tr>
+              <tr>
+                <td>TOTAL</td>
+                <td>2124000</td>
+                <td>3024000</td>
+              </tr>
+              <tr>
+                <th colspan="3">TERMS AND CONDITIONS</th>
+              </tr>
+              <tr>
+                <td colspan="3">RENTAL STARTS WHEN FULL PAYMENT RECIVED IN THE COMPANY</td>
+              </tr>
+              <tr>
+                <td colspan="3">FIRST RENTAL EMI START FROM AFTER THE 45 DAYS FROM THE COMPLETE PAYMENT DONE</td>
+              </tr>
+              <tr>
+                <td colspan="3">5% TDS DEDUCT FROM THE RENTAL</td>
+              </tr>
+              <tr>
+                <td colspan="3">DUBAI TRIP FOR CUSTOMER TILL 30TH MAY 2024</td>
+              </tr>
+              <tr>
+                <td colspan="3">DUBAI TRIP FOR CP TILL 30TH MAY 2024</td>
+              </tr>
+              <tr>
+                <td colspan="3">PAYMENT DETAILS</td>
+              </tr>
+              <tr>
+                <td >BOOKING AMOUNT</td>
+               <td colspan="2">25%</td>
+              </tr>
+              <tr>
+                <td >WITH IN 45 DAYS</td>
+               <td >25%</td>
+               <td >ON RAGISTRY</td>
+              </tr>
+              <tr>
+                <td >WITH IN 90 DAYS</td>
+               <td >25%</td>
+               <td >ON START CONSTRUCTION </td>
+              </tr>
+              <tr>
+                <td >WITH IN 180 DAYS</td>
+               <td >25%</td>
+               <td >COMPLITION</td>
+              </tr>
+              <tr>
+                <td colspan="3">RAGISTRY CHARGES AND ANY LEGAL CHARGES BORN BY CUSTOMER</td>
+              </tr>
+              <tr>
+                <td colspan="3">UNITS ALLOT BY FIRST CUM FIRST SERVE BASIS</td>
+              </tr>
+              <tr>
+                <td colspan="3">DUBAI TRIP WILL BE PLANED IN A GROUP ARROUND SEP - NOV MONTH</td>
+              </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row justify-content-center m-2">
+              <h1 class="text-center">Availabilty Chech</h1>
+                <table closs="my-2">
+                  <tr>
+                    <td>A21</th>
+                    <td>A22</th>
+                    <td>A23</th>
+                    <td>A24</th>
+                    <td>A25</th>
+                    <td>A26</th>
+                    <td>A27</th>
+                    <td>A28</th>
+                    <td>A29</th>
+                    <td>A30</th>
+                    <td>A31</th>
+                    <td>A32</th>
+                    <td>A33</th>
+                    <td>A34</th>
+                  </tr>
+                  <tr>
+                    <td>A35</th>
+                    <td>A36</th>
+                    <td>A37</th>
+                    <td>A38</th>
+                    <td>A39</th>
+                    <td>A40</th>
+                    <td>A41</th>
+                    <td>A42</th>
+                    <td>A43</th>
+                    <td>A44</th>
+                    <td>A45</th>
+                    <td>A46</th>
+                    <td>A47</th>
+                    <td>A48</th>
+                  </tr>
+                  <tr>
+                    <td>A49</th>
+                    <td>A50</th>
+                    <td>A51</th>
+                    <td>A52</th>
+                    <td>A53</th>
+                    <td>A54</th>
+                    <td>A55</th>
+                    <td>A56</th>
+                    <td>A57</th>
+                    <td>A58</th>
+                    <td>A59</th>
+                    <td>A60</th>
+                    <td>A61</th>
+                    <td>A62</th>
+                  </tr>
+                  <tr>
+                    <td>A63</th>
+                    <td>A64</th>
+                    <td>A65</th>
+                    <td>A66</th>
+                    <td>A67</th>
+                    <td>A68</th>
+                    <td>A69</th>
+                    <td>A70</th>
+                    <td>A71</th>
+                    <td>A72</th>
+                    <td>A73</th>
+                    <td>A74</th>
+                    <td>A75</th>
+                    <td>A76</th>
+                  </tr>
+                  <tr>
+                    <td>A77</th>
+                    <td>A78</th>
+                    <td>A79</th>
+                    <td>A80</th>
+                    <td>A81</th>
+                    <td>A82</th>
+                    <td>A83</th>
+                    <td>A84</td>
+                    <td>B1</td>
+                    <td>B2</td>
+                    <td>B3</td>
+                    <td>B4</td>
+                    <td>B5</td>
+                    <td>B6</td>
+                  </tr>
+                  <tr>
+                    <td>B7</td>
+                    <td>B8</td>
+                    <td>B9</td>
+                    <td>B10</td>
+                    <td>B11</td>
+                    <td>B12</td>
+                    <td>B13</td>
+                    <td>B14</td>
+                    <td>B15</td>
+                    <td>B16</td>
+                    <td>B17</td>
+                    <td>B18</td>
+                    <td>B19</td>
+                    <td>B20</td>
+                  </tr>
+                  <tr>
+                    <td>B21</td>
+                    <td>B22</td>
+                    <td>B23</td>
+                    <td>B24</td>
+                    <td>B25</td>
+                    <td>B26</td>
+                    <td>B27</td>
+                    <td>B28</td>
+                    <td>B29</td>
+                    <td>B30</td>
+                    <td>B31</td>
+                    <td>B32</td>
+                    <td>B33</td>
+                    <td>B34</td>
+                  </tr>
+                  <tr>
+                    <td>B35</td>
+                    <td>B36</td>
+                    <td>B37</td>
+                    <td>B38</td>
+                    <td>B39</td>
+                    <td>B40</td>
+                    <td>B41</td>
+                    <td>B42</td>
+                    <td>B43</td>
+                    <td>B44</td>
+                    <td>B45</td>
+                    <td>B46</td>
+                    <td>B47</td>
+                    <td>B48</td>
+                  </tr>
+                  <tr>
+                    <td>B49</td>
+                    <td>B50</td>
+                    <td>B51</td>
+                    <td>B52</td>
+                    <td>B53</td>
+                    <td>B54</td>
+                    <td>B55</td>
+                    <td>B56</td>
+                    <td>B57</td>
+                    <td>B58</td>
+                    <td>B59</td>
+                    <td>B60</td>
+                    <td>B61</td>
+                    <td>B62</td>
+                  </tr>
+                  <tr>
+                    <td>B63</td>
+                    <td>B64</td>
+                    <td>B65</td>
+                    <td>B66</td>
+                    <td>B67</td>
+                    <td>B68</td>
+                    <td>B69</td>
+                    <td>B70</td>
+                    <td>B71</td>
+                    <td>B72</td>
+                    <td>B73</td>
+                    <td>B74</td>
+                    <td>B75</td>
+                    <td>B76</td>
+                  </tr>
+                  <tr>
+                    <td>B77</td>
+                    <td>B78</td>
+                    <td>B79</td>
+                    <td>B80</td>
+                    <td>B81</td>
+                    <td>B82</td>
+                    <td>C1</td>
+                    <td>C2</td>
+                    <td>C3</td>
+                    <td>C4</td>
+                    <td>C5</td>
+                    <td>C6</td>
+                    <td>C7</td>
+                    <td>C8</td>
+                  </tr>
+                  <tr>
+                    <td>C9</td>
+                    <td>C10</td>
+                    <td>C11</td>
+                    <td>C12</td>
+                    <td>C13</td>
+                    <td>C14</td>
+                    <td>C15</td>
+                    <td>C16</td>
+                    <td>C17</td>
+                    <td>C18</td>
+                    <td>C19</td>
+                    <td>C20</td>
+                    <td>C21</td>
+                    <td>C22</td>
+                  </tr>
+                  <tr>
+                    <td>C23</td>
+                    <td>C24</td>
+                    <td>C25</td>
+                    <td>C26</td>
+                    <td>C27</td>
+                    <td>C28</td>
+                    <td>C29</td>
+                    <td>C30</td>
+                    <td>C31</td>
+                    <td>C32</td>
+                    <td>C33</td>
+                    <td>C34</td>  
+                    <td>C35</td>
+                    <td>C36</td>
+                  </tr>
+                  <tr>
+                    <td>C37</td>
+                    <td>C38</td>
+                    <td>C39</td>
+                    <td>C40</td>
+                    <td>C41</td>
+                    <td>C42</td>
+                    <td>C43</td>
+                    <td>C44</td>
+                    <td>C45</td>
+                    <td>C46</td>
+                    <td>C47</td>
+                    <td>C48</td>
+                    <td>C49</td>
+                    <td>C50</td>
+                  </tr>
+                  <tr>
+                    <td>C51</td>
+                    <td>C52</td>
+                    <td>C53</td>
+                    <td>C54</td>
+                    <td>C55</td>
+                    <td>C56</td>
+                    <td>C57</td>
+                    <td>C58</td>
+                    <td>C59</td>
+                    <td>C60</td>
+                    <td>C61</td>
+                    <td>C62</td>
+                    <td>C63</td>
+                    <td>D21</td>
+                  </tr>
+                  <tr>
+                    <td>D22</td>
+                    <td>D23</td>
+                    <td>D24</td>
+                    <td>D25</td>
+                    <td>D26</td>
+                    <td>D27</td>
+                    <td>D28</td>
+                    <td>D29</td>
+                    <td>D30</td>
+                    <td>D31</td>  
+                    <td>D32</td>
+                    <td>D33</td>
+                    <td>D34</td>
+                    <td>D35</td>
+                  </tr>
+                  <tr>
+                    <td>D36</td>
+                    <td>D37</td>
+                    <td>D38</td>
+                    <td>D39</td>
+                    <td>D40</td>
+                    <td>D41</td>
+                    <td>D42</td>
+                    <td>D43</td>
+                    <td>D44</td>
+                    <td>D45</td>
+                    <td>D46</td>
+                    <td>D47</td>
+                    <td>D48</td>
+                    <td>D49</td>
+                  </tr>
+                  <tr>
+                    <td>D50</td>
+                    <td>D51</td>
+                    <td>D52</td>
+                    <td>D53</td>
+                    <td>D54</td>
+                    <td>D55</td>
+                    <td>D56</td>
+                    <td>D57</td>
+                    <td>D58</td>
+                    <td>D59</td>
+                    <td>D60</td>
+                    <td>D61</td>
+                    <td colspan="2"></td>
+                  </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+  <!-- <div class="footer"> -->
+    <div class="container-fluid justify-content-center footer mt -2">
+        <div class="col">
+            <img src="./image/csp-logo-tr.png" height="100px"><br>
+            <img src="./image/location.png" height="10px" width="10px">
+            <span><B>Head Office :</B>B23A 4 Floor Sector 62 Noida Near Fortis Hospital </span><br>
+            <img src="./image/mobile.jpg" height="10px" width="10px">
+            <span>+91-9456669853</span><br>
+            <img src="./image/mail-Box.png" height="10px" width="10px">
+            <span>info@jpccgroup.com</span>
+        </div>
+        <div class="col">
+          <img src="./image/visit.png" height="34px"><br>
+            <p><a href="https://maps.app.goo.gl/114k4E1C1jryXeKQ6" >B23A 4 Floor Sector 62 Noida Near Fortis Hospital</a>  </p>
+            <p><a href="https://maps.app.goo.gl/Cm1cpF7PcmmS3LTE9" style="text-decoration: none; color: white;">A- 1229 G.D. Colony Mayur Vihar phase – III</a>  </p>
+            <p><a href="https://maps.app.goo.gl/QAREP9cdDXV6Fysw5" style="text-decoration: none; color: white;">905 peals business park netaji subhash place
+              Delhi – 110034</a>  </p>
+            
+        </div>
+        <div class="col">
+          <img src="./image/contact.png" height="34px"><br>
+          
+          <p><a href="mailto:info@jpccgroup.com? cc=skywalker@starwars.com& subject=My%20query&body=My%20is%3A%0D%0A%0D%0AName%2C%0D%0AMobile%20number" style="text-decoration: none; color: white;">Email to info@jpccgroup.com</a>  </p>
+          <p><a href="tel:+919456669853" style="text-decoration: none; color: white;">Call on +91 9456669853</a>  </p>
+          <p><a href="https://wa.me/+919456669853?text=my%20query%20is%2C%0D%0Amy%20name%20is%2C%0D%0Amy%20mobile%20number%20is" style="text-decoration: none; color: white;">WhatsApp on+91 9456669853</a> </p>
+        </div>
+        <div class="col">
+            <h2>Impotant links</h2>
+            <a href="">Updates</a><br>
+            <a href="">available plots</a><br>
+            <a href="">Active project </a><br>
+            <a href="">upcoming Project</a><br>
+            <a href="">delivered Project </a><br>
+            <a href="">Offers and servies</a><br>
+            <a href="">login/SignUp</a><br>
+        </div>
+      <!-- </div> -->
+    </div>
+    <div  class="container-fluid text-center bg-secondary" style="height: 50px; " >
+        <p>copyright@ All right reserved</p>
+    
+    </div>
+  </body>
+</html>
 
